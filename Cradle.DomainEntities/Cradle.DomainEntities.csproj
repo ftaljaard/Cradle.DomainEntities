@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3CD6493-9E16-4361-9C4E-DCC7F6E550AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cradle.DomainEntities</RootNamespace>
+    <AssemblyName>Cradle.DomainEntities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\EntityBase.cs" />
+    <Compile Include="Base\CategoryBase.cs" />
+    <Compile Include="Contracts\IAuditable.cs" />
+    <Compile Include="Contracts\ITrackable.cs" />
+    <Compile Include="Entities\MasterItemAlias_View.cs" />
+    <Compile Include="Entities\ItemSegment.cs" />
+    <Compile Include="Entities\MasterItemAlias.cs" />
+    <Compile Include="Entities\OptionalFields.cs" />
+    <Compile Include="Entities\ProcessStep.cs" />
+    <Compile Include="Entities\ProcessStepLookup.cs" />
+    <Compile Include="Entities\ProcessStepLookup_Write.cs" />
+    <Compile Include="Entities\UserGroup.cs" />
+    <Compile Include="Entities\ProcessMembers.cs" />
+    <Compile Include="Enum\TrackingEntityType.cs" />
+    <Compile Include="Services\ApplicationExceptions.cs" />
+    <Compile Include="Services\BarcodeMaster.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Document.cs" />
+    <Compile Include="Entities\DocumentDetail.cs" />
+    <Compile Include="Contracts\IEntityBase.cs" />
+    <Compile Include="Entities\Location.cs" />
+    <Compile Include="Entities\MasterItem.cs" />
+    <Compile Include="Entities\Pallet.cs" />
+    <Compile Include="Entities\Process.cs" />
+    <Compile Include="Enum\AdjustmentType.cs" />
+    <Compile Include="Enum\AppliesTo.cs" />
+    <Compile Include="Enum\BarcodeType.cs" />
+    <Compile Include="Contracts\IActivatable.cs" />
+    <Compile Include="Contracts\ICategorizable.cs" />
+    <Compile Include="Base\OptionalFieldBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Status.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Transaction.cs" />
+    <Compile Include="Entities\StockTakeLine.cs" />
+    <Compile Include="Entities\StockTakeScanned.cs" />
+    <Compile Include="Entities\StockTakeSession.cs" />
+    <Compile Include="Entities\TrackingEntity.cs" />
+    <Compile Include="Entities\Type.cs" />
+    <Compile Include="Services\IntegrationSettings.cs" />
+    <Compile Include="Services\ScannerSettings.cs" />
+    <Compile Include="Services\ApplicationSetting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

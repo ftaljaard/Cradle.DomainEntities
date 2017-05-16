@@ -1,0 +1,5 @@
+C:\Work\Source Code\Granite\trunk\Cradle.DomainEntities\bin\Debug\Cradle.DomainEntities.dll
+C:\Work\Source Code\Granite\trunk\Cradle.DomainEntities\bin\Debug\Cradle.DomainEntities.pdb
+C:\Work\Source Code\Granite\trunk\Cradle.DomainEntities\obj\Debug\Cradle.DomainEntities.csprojResolveAssemblyReference.cache
+C:\Work\Source Code\Granite\trunk\Cradle.DomainEntities\obj\Debug\Cradle.DomainEntities.dll
+C:\Work\Source Code\Granite\trunk\Cradle.DomainEntities\obj\Debug\Cradle.DomainEntities.pdb
